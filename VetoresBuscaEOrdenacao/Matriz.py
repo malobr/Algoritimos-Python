@@ -26,8 +26,17 @@ for i in range(qtd):
   matriz.append(linha)
 
 print("\nA lista de alunos e suas caracteristicas é: \n")
-for indice in matriz:
-  print(indice)
+#
+for i in range(len(matriz)):
+#
+  print(f"Dados do aluno: {matriz[i][0]}")
+#
+  for j in range(len(matriz[i])):
+#
+    print(f"Linha {i} | Coluna {j} - {matriz[i][j]}")
+#
+  print("")
+#
 print(matriz)
 print(f"\nLista de nomes: {alunos}")
 print(f"Lista de cores: {cores}")
